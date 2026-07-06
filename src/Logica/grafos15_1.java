@@ -13,11 +13,11 @@ import java.util.HashMap;
  *
  * @author darwi
  */
-public class Resolver_grafos {
+public class grafos15_1 {
         private Grafo grafo;
 
 
-    public Resolver_grafos() {
+    public grafos15_1() {
 
         grafo = new Grafo();
 
