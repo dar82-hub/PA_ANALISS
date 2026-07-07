@@ -18,12 +18,12 @@ import logica.grafos15_1;
  *
  * @author darwi
  */
-public class PREGUNTA_1 extends javax.swing.JFrame {
+public class PREGUNTA15_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form PRINCIPAL
      */
-    public PREGUNTA_1() {
+    public PREGUNTA15_1() {
         initComponents();
     }
 
@@ -93,7 +93,7 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 btncargarbtnpregun1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btncargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 163, 46));
+        jPanel1.add(btncargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 163, 50));
 
         btnresolver.setBackground(new java.awt.Color(0, 0, 0));
         btnresolver.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -122,7 +122,7 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 btnresolverbtnpregun1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnresolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 200, 46));
+        jPanel1.add(btnresolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 200, 50));
 
         btnlimpiar.setBackground(new java.awt.Color(0, 0, 0));
         btnlimpiar.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -150,12 +150,12 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 btnlimpiarbtnpregun1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, 190, 46));
+        jPanel1.add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 190, 50));
 
         btnmenu.setBackground(new java.awt.Color(0, 0, 0));
         btnmenu.setFont(new java.awt.Font("Segoe UI Black", 0, 20)); // NOI18N
         btnmenu.setForeground(new java.awt.Color(0, 255, 0));
-        btnmenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/MENU_ORIGINAL.png"))); // NOI18N
+        btnmenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/MENUU_COLORR.png"))); // NOI18N
         btnmenu.setText("MENU");
         btnmenu.setAutoscrolls(true);
         btnmenu.setContentAreaFilled(false);
@@ -178,7 +178,7 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 btnmenuActionPerformed(evt);
             }
         });
-        jPanel1.add(btnmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 170, 40));
+        jPanel1.add(btnmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 10, 170, 50));
 
         jPanel2.setBackground(java.awt.SystemColor.activeCaption);
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -195,7 +195,7 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "PREGUNTA", "RESULTADO"
+                "NODOS", "GRADOS"
             }
         ));
         jScrollPane1.setViewportView(tablagrados);
@@ -205,18 +205,21 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(29, 29, 29)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jPanel3.setBackground(java.awt.SystemColor.activeCaption);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel3.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel3.setText("RESULTADO");
 
@@ -240,9 +243,9 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(554, 554, 554)
+                        .addGap(23, 23, 23)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(534, 534, 534)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -266,7 +269,7 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
 
         jPanel4.setBackground(java.awt.SystemColor.activeCaption);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel6.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel6.setText("IMAGEN");
 
@@ -275,22 +278,22 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap()
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 372, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
@@ -323,16 +326,14 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
             .addGroup(pre1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pre1Layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 893, Short.MAX_VALUE)
-                        .addContainerGap())
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 893, Short.MAX_VALUE)
                     .addGroup(pre1Layout.createSequentialGroup()
                         .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 429, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32))))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         pre1Layout.setVerticalGroup(
             pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -344,15 +345,13 @@ public class PREGUNTA_1 extends javax.swing.JFrame {
                 .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pre1Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(pre1Layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 311, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(109, 109, 109))
         );
 
-        getContentPane().add(pre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 900));
+        getContentPane().add(pre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

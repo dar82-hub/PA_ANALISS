@@ -4,24 +4,27 @@
  */
 package VISUAL;
 
+import Logica.Grafos15_3;
 import java.awt.Color;
 import java.awt.Image;
 import java.io.File;
+import java.util.Map;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author darwi
  */
-public class PREGUNTAA_1 extends javax.swing.JFrame {
+public class PREGUNTA15_3 extends javax.swing.JFrame {
 
     /**
      * Creates new form PREGUNTAA_1
      */
-    public PREGUNTAA_1() {
+    public PREGUNTA15_3() {
         initComponents();
     }
 
@@ -95,6 +98,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
         btnresolver.setBackground(new java.awt.Color(0, 0, 0));
         btnresolver.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnresolver.setForeground(new java.awt.Color(0, 255, 51));
+        btnresolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/PLAY_COLOR.png"))); // NOI18N
         btnresolver.setText("RESOLVER ");
         btnresolver.setAutoscrolls(true);
         btnresolver.setContentAreaFilled(false);
@@ -118,7 +122,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                 btnresolverbtnpregun1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnresolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 140, 46));
+        jPanel1.add(btnresolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 200, 46));
 
         btnlimpiar.setBackground(new java.awt.Color(0, 0, 0));
         btnlimpiar.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -146,12 +150,12 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                 btnlimpiarbtnpregun1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, 190, 46));
+        jPanel1.add(btnlimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 20, 190, 50));
 
         btnmenu.setBackground(new java.awt.Color(0, 0, 0));
         btnmenu.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btnmenu.setForeground(new java.awt.Color(0, 255, 0));
-        btnmenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/MENU_ORIGINAL.png"))); // NOI18N
+        btnmenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/MENUU_COLORR.png"))); // NOI18N
         btnmenu.setText("MENU");
         btnmenu.setAutoscrolls(true);
         btnmenu.setContentAreaFilled(false);
@@ -174,7 +178,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                 btnmenuActionPerformed(evt);
             }
         });
-        jPanel1.add(btnmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 170, 40));
+        jPanel1.add(btnmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 170, 50));
 
         jPanel2.setBackground(java.awt.SystemColor.activeCaption);
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
@@ -191,7 +195,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "NODOS", "GRADO"
+                "PREGUNTA ", "RESULTADO"
             }
         ));
         jScrollPane1.setViewportView(tablagrados);
@@ -201,21 +205,21 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(java.awt.SystemColor.activeCaption);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel3.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel3.setText("RESULTADO");
 
@@ -239,9 +243,9 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(293, 293, 293)
+                        .addGap(27, 27, 27)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(256, 256, 256)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -266,7 +270,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
 
         jPanel4.setBackground(java.awt.SystemColor.activeCaption);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel6.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel6.setText("IMAGEN");
 
@@ -279,9 +283,9 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblimagen, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -311,8 +315,8 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addComponent(jLabel1)
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pre1Layout = new javax.swing.GroupLayout(pre1);
@@ -320,56 +324,48 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
         pre1Layout.setHorizontalGroup(
             pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(pre1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pre1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pre1Layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 893, Short.MAX_VALUE)
-                        .addContainerGap())
+                .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(pre1Layout.createSequentialGroup()
                         .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 429, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32))))
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21))
         );
         pre1Layout.setVerticalGroup(
             pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pre1Layout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pre1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pre1Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(pre1Layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 311, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 920, Short.MAX_VALUE)
+            .addGap(0, 937, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(pre1, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(pre1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 937, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 900, Short.MAX_VALUE)
+            .addGap(0, 770, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(pre1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre1, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
@@ -439,47 +435,20 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
 
     private void btnresolverbtnpregun1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnresolverbtnpregun1ActionPerformed
         // TODO add your handling code here:
-        Resolver_grafos resolver = new Resolver_grafos();
-
-        // Mostrar V y A
-        txtresultado.setText("");
-
-        txtresultado.append("CONJUNTO DE VÉRTICES\n");
-        txtresultado.append(resolver.obtenerVertices());
-
-        txtresultado.append("\n\n");
-
-        txtresultado.append("CONJUNTO DE ARISTAS\n");
-        txtresultado.append(resolver.obtenerAristas());
-
-        txtresultado.append("\n\n");
-
-        txtresultado.append("GRADO DE CADA NODO\n");
-
-        DefaultTableModel modelo =
+       Grafos15_3 resolver = new Grafos15_3();
+       txtresultado.setText(resolver.generarResultado());
+DefaultTableModel modelo =
         (DefaultTableModel) tablagrados.getModel();
 
-        modelo.setRowCount(0);
+modelo.setRowCount(0);
+for (Map.Entry<String, String> dato : resolver.resumen().entrySet()) {
 
-        Map<String, Integer> grados =
-        resolver.obtenerGrados();
-
-        for (Map.Entry<String, Integer> dato : grados.entrySet()) {
-
-            modelo.addRow(new Object[]{
-                dato.getKey(),
-                dato.getValue()
-            });
-
-            txtresultado.append(
-                "Grado(" + dato.getKey() + ") = "
-                + dato.getValue() + "\n"
-            );
-
-        }
-
+    modelo.addRow(new Object[]{
+        dato.getKey(),
+        dato.getValue()
+    });
     }//GEN-LAST:event_btnresolverbtnpregun1ActionPerformed
-
+    }
     private void btnlimpiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnlimpiarMouseEntered
         // TODO add your handling code here:
         btnlimpiar.setBorder(
@@ -533,37 +502,7 @@ public class PREGUNTAA_1 extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PREGUNTAA_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PREGUNTAA_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PREGUNTAA_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PREGUNTAA_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new PREGUNTAA_1().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btncargar;

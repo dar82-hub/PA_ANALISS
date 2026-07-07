@@ -36,7 +36,12 @@ public class Menu extends javax.swing.JFrame {
         panel_1 = new javax.swing.JPanel();
         btnejericicio1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        btnbuscar = new javax.swing.JButton();
+        panel_2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        btnejericicio3 = new javax.swing.JButton();
+        panel_3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        btnsalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,10 +57,10 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(317, 317, 317)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(332, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(321, Short.MAX_VALUE))
+                .addGap(306, 306, 306))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,7 +83,7 @@ public class Menu extends javax.swing.JFrame {
         btnejericicio1.setBackground(new java.awt.Color(0, 0, 0));
         btnejericicio1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnejericicio1.setForeground(new java.awt.Color(0, 255, 51));
-        btnejericicio1.setText("EJERCICIO_1");
+        btnejericicio1.setText("EJERCICIO_15.1");
         btnejericicio1.setAutoscrolls(true);
         btnejericicio1.setFocusCycleRoot(true);
         btnejericicio1.setFocusPainted(false);
@@ -105,32 +110,6 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 204, 51));
         jLabel2.setText("GRAFOS NO DIRIGIDOS");
 
-        btnbuscar.setBackground(new java.awt.Color(0, 0, 0));
-        btnbuscar.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        btnbuscar.setForeground(new java.awt.Color(0, 255, 51));
-        btnbuscar.setText("BUSCAR");
-        btnbuscar.setAutoscrolls(true);
-        btnbuscar.setContentAreaFilled(false);
-        btnbuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnbuscar.setDoubleBuffered(true);
-        btnbuscar.setFocusCycleRoot(true);
-        btnbuscar.setFocusPainted(false);
-        btnbuscar.setFocusable(false);
-        btnbuscar.setVerifyInputWhenFocusTarget(false);
-        btnbuscar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnbuscarMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnbuscarMouseExited(evt);
-            }
-        });
-        btnbuscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnbuscarbtnpregun1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout panel_1Layout = new javax.swing.GroupLayout(panel_1);
         panel_1.setLayout(panel_1Layout);
         panel_1Layout.setHorizontalGroup(
@@ -138,14 +117,11 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(panel_1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnbuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panel_1Layout.createSequentialGroup()
-                        .addGroup(panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panel_1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(0, 9, Short.MAX_VALUE))
-                            .addComponent(btnejericicio1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())))
+                        .addComponent(jLabel2)
+                        .addGap(0, 21, Short.MAX_VALUE))
+                    .addComponent(btnejericicio1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         panel_1Layout.setVerticalGroup(
             panel_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,10 +129,138 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnejericicio1, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
-                .addGap(26, 26, 26)
-                .addComponent(btnbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addComponent(btnejericicio1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        panel_2.setBackground(new java.awt.Color(0, 40, 60));
+        panel_2.setForeground(new java.awt.Color(0, 255, 0));
+        panel_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                panel_2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panel_2MouseExited(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 204, 51));
+        jLabel3.setText("GRAFOS NO DIRIGIDOS");
+
+        btnejericicio3.setBackground(new java.awt.Color(0, 0, 0));
+        btnejericicio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnejericicio3.setForeground(new java.awt.Color(0, 255, 51));
+        btnejericicio3.setText("EJERCICIO_15.3");
+        btnejericicio3.setAutoscrolls(true);
+        btnejericicio3.setFocusCycleRoot(true);
+        btnejericicio3.setFocusPainted(false);
+        btnejericicio3.setFocusable(false);
+        btnejericicio3.setInheritsPopupMenu(true);
+        btnejericicio3.setRequestFocusEnabled(false);
+        btnejericicio3.setRolloverEnabled(false);
+        btnejericicio3.setVerifyInputWhenFocusTarget(false);
+        btnejericicio3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnejericicio3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnejericicio3MouseExited(evt);
+            }
+        });
+        btnejericicio3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnejericicio3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel_2Layout = new javax.swing.GroupLayout(panel_2);
+        panel_2.setLayout(panel_2Layout);
+        panel_2Layout.setHorizontalGroup(
+            panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnejericicio3, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                    .addGroup(panel_2Layout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(jLabel3)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panel_2Layout.setVerticalGroup(
+            panel_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnejericicio3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(254, 254, 254))
+        );
+
+        panel_3.setBackground(new java.awt.Color(0, 40, 60));
+        panel_3.setForeground(new java.awt.Color(0, 255, 0));
+        panel_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                panel_3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                panel_3MouseExited(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 204, 51));
+        jLabel4.setText("GRAFOS NO DIRIGIDOS");
+
+        btnsalir.setBackground(new java.awt.Color(0, 0, 0));
+        btnsalir.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(0, 255, 51));
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICON/SALIR_COLOR.png"))); // NOI18N
+        btnsalir.setText("SALIR");
+        btnsalir.setAutoscrolls(true);
+        btnsalir.setFocusCycleRoot(true);
+        btnsalir.setFocusPainted(false);
+        btnsalir.setFocusable(false);
+        btnsalir.setInheritsPopupMenu(true);
+        btnsalir.setRequestFocusEnabled(false);
+        btnsalir.setRolloverEnabled(false);
+        btnsalir.setVerifyInputWhenFocusTarget(false);
+        btnsalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnsalirMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnsalirMouseExited(evt);
+            }
+        });
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalirActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel_3Layout = new javax.swing.GroupLayout(panel_3);
+        panel_3.setLayout(panel_3Layout);
+        panel_3Layout.setHorizontalGroup(
+            panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_3Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(0, 9, Short.MAX_VALUE))
+                    .addComponent(btnsalir, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        panel_3Layout.setVerticalGroup(
+            panel_3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(254, 254, 254))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -164,13 +268,17 @@ public class Menu extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(100, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(86, 86, 86))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addComponent(panel_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(56, 56, 56)
+                .addComponent(panel_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addComponent(panel_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,8 +286,11 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
-                .addComponent(panel_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(panel_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -213,27 +324,11 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnejericicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnejericicio1ActionPerformed
         // TODO add your handling code here:
-        PREGUNTA_1  p = new PREGUNTA_1();
+        PREGUNTA15_1  p = new PREGUNTA15_1();
           p.setVisible(true);
         p.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_btnejericicio1ActionPerformed
-
-    private void btnbuscarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbuscarMouseEntered
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_btnbuscarMouseEntered
-
-    private void btnbuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbuscarMouseExited
-        // TODO add your handling code here:
-        btnbuscar.setBorder(null);
-    }//GEN-LAST:event_btnbuscarMouseExited
-
-    private void btnbuscarbtnpregun1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarbtnpregun1ActionPerformed
-        // TODO add your handling code here:
-       
-
-    }//GEN-LAST:event_btnbuscarbtnpregun1ActionPerformed
 
     private void panel_1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_1MouseExited
         // TODO add your handling code here:
@@ -248,19 +343,93 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_panel_1MouseEntered
 
+    private void btnejericicio3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnejericicio3MouseEntered
+        // TODO add your handling code here:
+          btnejericicio3.setBorder(
+            BorderFactory.createLineBorder(
+                new Color(200,220,220),2
+            )
+        );
+        
+    }//GEN-LAST:event_btnejericicio3MouseEntered
+
+    private void btnejericicio3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnejericicio3MouseExited
+        // TODO add your handling code here:
+          
+    }//GEN-LAST:event_btnejericicio3MouseExited
+
+    private void btnejericicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnejericicio3ActionPerformed
+        // TODO add your handling code here:
+          PREGUNTA15_3  p = new PREGUNTA15_3();
+          p.setVisible(true);
+        p.setLocationRelativeTo(null);
+        this.dispose();
+        
+    }//GEN-LAST:event_btnejericicio3ActionPerformed
+
+    private void panel_2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_2MouseEntered
+        // TODO add your handling code here:
+        panel_2.setBorder(
+            BorderFactory.createLineBorder(
+                new Color(200,220,220),2
+            )
+        );
+    }//GEN-LAST:event_panel_2MouseEntered
+
+    private void panel_2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panel_2MouseExited
+
+    private void btnsalirMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsalirMouseEntered
+        // TODO add your handling code here:
+          btnsalir.setBorder(
+            BorderFactory.createLineBorder(
+                new Color(200,220,220),2
+            )
+        );
+    }//GEN-LAST:event_btnsalirMouseEntered
+
+    private void btnsalirMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnsalirMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnsalirMouseExited
+
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+        
+    }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void panel_3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panel_3MouseEntered
+
+    private void panel_3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_3MouseExited
+        // TODO add your handling code here:
+        panel_3.setBorder(
+            BorderFactory.createLineBorder(
+                new Color(200,220,220),2
+            )
+        );
+    }//GEN-LAST:event_panel_3MouseExited
+
     /**
      * @param args the command line arguments
      */
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnejericicio1;
+    private javax.swing.JButton btnejericicio3;
+    private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JPanel panel_1;
+    private javax.swing.JPanel panel_2;
+    private javax.swing.JPanel panel_3;
     // End of variables declaration//GEN-END:variables
 }
