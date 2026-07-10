@@ -4,6 +4,7 @@
  */
 package VISUAL;
 
+
 import java.awt.Color;
 import javax.swing.BorderFactory;
 
@@ -61,22 +62,22 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("MENU");
+        jLabel1.setText("MENU ctmr");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(332, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(306, 306, 306))
+                .addContainerGap(331, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(265, 265, 265))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_1.setBackground(new java.awt.Color(0, 40, 60));
@@ -615,6 +616,11 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnejericicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnejericicio2ActionPerformed
         // TODO add your handling code here:
+        Vista p = new Vista();
+          p.setVisible(true);
+        p.setLocationRelativeTo(null);
+        this.dispose();
+        
     }//GEN-LAST:event_btnejericicio2ActionPerformed
 
     private void panel_4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_4MouseEntered
