@@ -10,7 +10,7 @@ import VISUAL.Menu;
  *
  * @author darwi
  */
-public class PA_ANALISIS_OÑO {
+public class Main {
 
     /**
      * @param args the command line arguments
