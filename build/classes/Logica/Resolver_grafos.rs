@@ -1,2 +1,0 @@
-pa_analisis_oño.Resolver_grafos
-logica.Resolver_grafos
