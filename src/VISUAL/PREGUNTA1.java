@@ -84,7 +84,7 @@ private ListaNumeros lista = new ListaNumeros();
         btncargar.setText("CARGAR");
         btncargar.setAutoscrolls(true);
         btncargar.setContentAreaFilled(false);
-        btncargar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btncargar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btncargar.setDoubleBuffered(true);
         btncargar.setFocusCycleRoot(true);
         btncargar.setFocusPainted(false);
@@ -112,7 +112,7 @@ private ListaNumeros lista = new ListaNumeros();
         btnresolver.setText("ORDENAR");
         btnresolver.setAutoscrolls(true);
         btnresolver.setContentAreaFilled(false);
-        btnresolver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnresolver.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnresolver.setDefaultCapable(false);
         btnresolver.setFocusPainted(false);
         btnresolver.setFocusable(false);
@@ -141,7 +141,7 @@ private ListaNumeros lista = new ListaNumeros();
         btnmenu.setText("MENU");
         btnmenu.setAutoscrolls(true);
         btnmenu.setContentAreaFilled(false);
-        btnmenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnmenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnmenu.setDoubleBuffered(true);
         btnmenu.setFocusCycleRoot(true);
         btnmenu.setFocusPainted(false);
@@ -169,7 +169,7 @@ private ListaNumeros lista = new ListaNumeros();
         btnlimpiar1.setText("LIMPIAR");
         btnlimpiar1.setAutoscrolls(true);
         btnlimpiar1.setContentAreaFilled(false);
-        btnlimpiar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnlimpiar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnlimpiar1.setDoubleBuffered(true);
         btnlimpiar1.setFocusCycleRoot(true);
         btnlimpiar1.setFocusPainted(false);
@@ -220,7 +220,7 @@ private ListaNumeros lista = new ListaNumeros();
         txtarchivo.setForeground(new java.awt.Color(0, 255, 0));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("ARCHIVO:");
 
         rbtshell.setBackground(new java.awt.Color(0, 0, 0));
@@ -244,7 +244,7 @@ private ListaNumeros lista = new ListaNumeros();
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("ALGORITMO");
 
         txtresultado.setBackground(new java.awt.Color(0, 0, 0));
@@ -255,11 +255,10 @@ private ListaNumeros lista = new ListaNumeros();
         jScrollPane2.setViewportView(txtresultado);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel6.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("RESULTADO");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel7.setText("____________________________________________________________________");
 
         javax.swing.GroupLayout pre2Layout = new javax.swing.GroupLayout(pre2);
@@ -317,11 +316,11 @@ private ListaNumeros lista = new ListaNumeros();
         jPanel6.setBackground(java.awt.SystemColor.activeCaption);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("DATOS ORIGINALES");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel2.setForeground(java.awt.SystemColor.activeCaptionText);
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("DATOS ORDENADOS");
 
         tablaoriginal.setBackground(new java.awt.Color(0, 0, 0));
