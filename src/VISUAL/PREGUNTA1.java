@@ -618,6 +618,32 @@ private ListaNumeros lista = new ListaNumeros();
 
     private void btnlimpiar1btnpregun1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiar1btnpregun1ActionPerformed
         // TODO add your handling code here:
+        txtarchivo.setText("");
+
+    // Si tienes JTextArea de resultados
+    // txtresultado.setText("");
+
+    // Limpiar tabla original
+    DefaultTableModel modeloOriginal =
+            (DefaultTableModel) tablaoriginal.getModel();
+    modeloOriginal.setRowCount(0);
+
+    // Limpiar tabla Shell
+    DefaultTableModel modeloShell =
+            (DefaultTableModel) tablaordenado.getModel();
+    modeloShell.setRowCount(0);
+
+   
+
+    // Limpiar listas
+    lista.getLista().clear();
+
+   txtresultado.setText("");
+
+    JOptionPane.showMessageDialog(
+            this,
+            "Datos limpiados correctamente."
+    );
     }//GEN-LAST:event_btnlimpiar1btnpregun1ActionPerformed
 
     private void rbtshellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtshellActionPerformed

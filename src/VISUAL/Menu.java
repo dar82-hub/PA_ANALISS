@@ -343,14 +343,13 @@ public class Menu extends javax.swing.JFrame {
         panel_5Layout.setHorizontalGroup(
             panel_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_5Layout.createSequentialGroup()
-                .addGroup(panel_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_5Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel6))
-                    .addGroup(panel_5Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(btnejericicio4, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(15, 15, 15)
+                .addComponent(btnejericicio4, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(31, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(49, 49, 49))
         );
         panel_5Layout.setVerticalGroup(
             panel_5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -560,6 +559,13 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnejericicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnejericicio4ActionPerformed
         // TODO add your handling code here:
+         com.analisis.mochila.ui.MainFrame.aplicarEstiloGlobal();
+
+    com.analisis.mochila.ui.MainFrame ventana4 =
+            new com.analisis.mochila.ui.MainFrame();
+
+    ventana4.setLocationRelativeTo(this);
+    ventana4.setVisible(true);
     }//GEN-LAST:event_btnejericicio4ActionPerformed
 
     private void panel_5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel_5MouseEntered

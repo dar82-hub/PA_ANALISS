@@ -72,7 +72,9 @@ private Txt_utp txt = new Txt_utp();
         jLabel6 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        tablaoriginal = new javax.swing.JTable();
+        tablaordenada = new javax.swing.JTable();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        tablaoriginal1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -90,7 +92,7 @@ private Txt_utp txt = new Txt_utp();
         btncargar.setText("CARGAR");
         btncargar.setAutoscrolls(true);
         btncargar.setContentAreaFilled(false);
-        btncargar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btncargar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btncargar.setDoubleBuffered(true);
         btncargar.setFocusCycleRoot(true);
         btncargar.setFocusPainted(false);
@@ -118,7 +120,7 @@ private Txt_utp txt = new Txt_utp();
         btnbuscar.setText("BUSCAR");
         btnbuscar.setAutoscrolls(true);
         btnbuscar.setContentAreaFilled(false);
-        btnbuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnbuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnbuscar.setDefaultCapable(false);
         btnbuscar.setFocusPainted(false);
         btnbuscar.setFocusable(false);
@@ -147,7 +149,7 @@ private Txt_utp txt = new Txt_utp();
         btnlimpiar.setText("LIMPIAR");
         btnlimpiar.setAutoscrolls(true);
         btnlimpiar.setContentAreaFilled(false);
-        btnlimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnlimpiar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnlimpiar.setDoubleBuffered(true);
         btnlimpiar.setFocusCycleRoot(true);
         btnlimpiar.setFocusPainted(false);
@@ -175,7 +177,7 @@ private Txt_utp txt = new Txt_utp();
         btnmenu.setText("MENU");
         btnmenu.setAutoscrolls(true);
         btnmenu.setContentAreaFilled(false);
-        btnmenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnmenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnmenu.setDoubleBuffered(true);
         btnmenu.setFocusCycleRoot(true);
         btnmenu.setFocusPainted(false);
@@ -199,7 +201,6 @@ private Txt_utp txt = new Txt_utp();
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("BÚSQUEDA LINEAL VS BINARIA ");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -222,7 +223,6 @@ private Txt_utp txt = new Txt_utp();
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel3.setText("ARCHIVO:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 111, 34));
 
@@ -231,7 +231,6 @@ private Txt_utp txt = new Txt_utp();
         jPanel2.add(txtbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 140, 30));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel4.setForeground(java.awt.SystemColor.activeCaptionText);
         jLabel4.setText("BUSCAR:");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 100, 34));
 
@@ -354,10 +353,10 @@ private Txt_utp txt = new Txt_utp();
 
         jPanel6.setBackground(java.awt.SystemColor.activeCaption);
 
-        tablaoriginal.setBackground(java.awt.SystemColor.activeCaptionText);
-        tablaoriginal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        tablaoriginal.setForeground(new java.awt.Color(51, 255, 51));
-        tablaoriginal.setModel(new javax.swing.table.DefaultTableModel(
+        tablaordenada.setBackground(java.awt.SystemColor.activeCaptionText);
+        tablaordenada.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tablaordenada.setForeground(new java.awt.Color(51, 255, 51));
+        tablaordenada.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
                 {null},
@@ -365,23 +364,46 @@ private Txt_utp txt = new Txt_utp();
                 {null}
             },
             new String [] {
-                "NUMERO"
+                "DATOS ORDENADOS"
             }
         ));
-        jScrollPane4.setViewportView(tablaoriginal);
+        jScrollPane4.setViewportView(tablaordenada);
+
+        tablaoriginal1.setBackground(java.awt.SystemColor.activeCaptionText);
+        tablaoriginal1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        tablaoriginal1.setForeground(new java.awt.Color(51, 255, 51));
+        tablaoriginal1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "DATOS ORIGINALES"
+            }
+        ));
+        jScrollPane6.setViewportView(tablaoriginal1);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(17, 17, 17)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(13, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout pre1Layout = new javax.swing.GroupLayout(pre1);
@@ -467,29 +489,27 @@ private Txt_utp txt = new Txt_utp();
 
     private void btncargarbtnpregun1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncargarbtnpregun1ActionPerformed
         // TODO add your handling code here:
- JFileChooser selector = new JFileChooser();
+JFileChooser fc = new JFileChooser();
 
-    int opcion = selector.showOpenDialog(this);
+    int opcion = fc.showOpenDialog(this);
 
     if (opcion == JFileChooser.APPROVE_OPTION) {
 
+        File archivo = fc.getSelectedFile();
+
+        txtarchivo.setText(archivo.getAbsolutePath());
+
         try {
 
-            File archivo = selector.getSelectedFile();
-
-            txtarchivo.setText(archivo.getAbsolutePath());
-
-            // Limpiar lista antes de volver a cargar
-            lista = new ListaNumeros();
-
-          
             Txt_utp.cargarArchivo(
                     archivo.getAbsolutePath(),
                     lista
             );
 
+          
+
             DefaultTableModel modeloOriginal =
-                    (DefaultTableModel) tablaoriginal.getModel();
+                    (DefaultTableModel) tablaoriginal1.getModel();
 
             modeloOriginal.setRowCount(0);
 
@@ -501,10 +521,25 @@ private Txt_utp txt = new Txt_utp();
 
             }
 
-            ((DefaultTableModel) tablalineal.getModel()).setRowCount(0);
-            ((DefaultTableModel) tablabinaria.getModel()).setRowCount(0);
 
-            
+            ArrayList<Numero> listaOrdenada =
+                    new ArrayList<>(lista.getLista());
+
+            Collections.sort(listaOrdenada,
+                    Comparator.comparingInt(Numero::getValor));
+
+            DefaultTableModel modeloOrdenado =
+                    (DefaultTableModel) tablaordenada.getModel();
+
+            modeloOrdenado.setRowCount(0);
+
+            for (Numero n : listaOrdenada) {
+
+                modeloOrdenado.addRow(new Object[]{
+                    n.getValor()
+                });
+
+            }
 
             JOptionPane.showMessageDialog(
                     this,
@@ -515,13 +550,13 @@ private Txt_utp txt = new Txt_utp();
 
             JOptionPane.showMessageDialog(
                     this,
-                    "Error al cargar el archivo.\n"
-                    + e.getMessage()
+                    "Error al cargar el archivo.\n" + e.getMessage()
             );
 
         }
 
     }
+
 
     }//GEN-LAST:event_btncargarbtnpregun1ActionPerformed
 
@@ -536,7 +571,6 @@ private Txt_utp txt = new Txt_utp();
     }//GEN-LAST:event_btnbuscarMouseEntered
 
     private void btnbuscarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbuscarMouseExited
-        // TODO add your handling code here:
         btnbuscar.setBorder(null);
     }//GEN-LAST:event_btnbuscarMouseExited
 
@@ -679,7 +713,30 @@ private Txt_utp txt = new Txt_utp();
     }//GEN-LAST:event_btnlimpiarMouseExited
 
     private void btnlimpiarbtnpregun1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlimpiarbtnpregun1ActionPerformed
-        // TODO add your handling code here:
+        txtarchivo.setText("");
+    txtbuscar.setText("");
+
+    DefaultTableModel modeloOriginal =
+            (DefaultTableModel) tablaordenada.getModel();
+    modeloOriginal.setRowCount(0);
+
+    DefaultTableModel modeloOrdenada =
+            (DefaultTableModel) tablaordenada.getModel();
+    modeloOrdenada.setRowCount(0);
+
+    DefaultTableModel modeloLineal =
+            (DefaultTableModel) tablalineal.getModel();
+    modeloLineal.setRowCount(0);
+
+    DefaultTableModel modeloBinaria =
+            (DefaultTableModel) tablabinaria.getModel();
+    modeloBinaria.setRowCount(0);
+
+   
+    JOptionPane.showMessageDialog(
+            this,
+            "Datos limpiados correctamente."
+    );
         
     }//GEN-LAST:event_btnlimpiarbtnpregun1ActionPerformed
 
@@ -742,13 +799,15 @@ private Txt_utp txt = new Txt_utp();
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JPanel pre1;
     private javax.swing.JRadioButton rbtcomparar;
     private javax.swing.JRadioButton rbtinaria;
     private javax.swing.JRadioButton rbtlineal;
     private javax.swing.JTable tablabinaria;
     private javax.swing.JTable tablalineal;
-    private javax.swing.JTable tablaoriginal;
+    private javax.swing.JTable tablaordenada;
+    private javax.swing.JTable tablaoriginal1;
     private javax.swing.JTextField txtarchivo;
     private javax.swing.JTextField txtbuscar;
     // End of variables declaration//GEN-END:variables

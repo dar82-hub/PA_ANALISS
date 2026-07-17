@@ -91,6 +91,15 @@ public class MainFrame extends JFrame {
         //         dispose();
         //     }
         // });
+          btnVolver.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                VISUAL.Menu m = new VISUAL.Menu();
+                m.setVisible(true);
+                m.setLocationRelativeTo(null);
+                dispose();
+            }
+        });
     }
 
     private void initComponents() {
